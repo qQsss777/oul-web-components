@@ -11,7 +11,8 @@ export const template = `
   [data-role="code"]{
     border-radius: 10px;
     box-sizing: border-box;
-    padding:10px;
+    padding:15px;
+    padding-right: 100px;
     field-sizing: content;
     height: fit-content;
     resize: none;
@@ -24,14 +25,14 @@ export const template = `
     border-radius: 5px;
     box-sizing: border-box;
     right: 15px;
-    top: 15px;
+    top: 10px;
   }
   [data-role="modal"]{
     display: none;
     position: absolute;
     background-color:rgba(255, 255, 255, 0.6);
     right: 50px;
-    top: 15px;
+    top: 10px;
   }
 </style>
 <div data-role="container">
