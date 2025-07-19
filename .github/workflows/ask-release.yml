@@ -6,6 +6,11 @@ on:
       version_type:
         description: 'Type de version (patch, minor, major)'
         required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
         default: 'patch'
 
 jobs:
