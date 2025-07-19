@@ -1,7 +1,7 @@
 name: Build web component
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   build:
@@ -22,3 +22,6 @@ jobs:
 
       - name: Build Web Component
         run: npm run build
+
+      - name: Build Storybook
+        run: npm run build-storybook
