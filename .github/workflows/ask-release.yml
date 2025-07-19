@@ -40,6 +40,5 @@ jobs:
         run: git diff
       - name: Bump version and create git tag
         run: |
-          HUSKY=0 npm version ${{ github.event.inputs.version_type }} -m "Bump to %s"
-          git push origin HEAD
+          HUSKY=0 npm version ${{ github.event.inputs.version_type }} -m "Bump to version %s"
           git push origin --tags
