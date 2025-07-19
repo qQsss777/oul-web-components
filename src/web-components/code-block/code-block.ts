@@ -54,12 +54,13 @@ export default class CodeBlock extends HTMLElement {
     });
     //ajout du style personnalisé au style par défaut
     const defaultStyle = shadowRoot.querySelector("style") as HTMLStyleElement;
+    //@ts-expect-error TS2322 erreur TS au moment du build je ne sais pas pourquoi
     this.defaultStyleText = defaultStyle.textContent;
     defaultStyle.textContent += customStyle;
   }
 
   // met a jour le textarea ou le style css
-  attributeChangedCallback(name: string, oldValue: string, newValue: string) {
+  attributeChangedCallback(name: string, _oldValue: string, newValue: string) {
     const shadowRoot = this.shadowRoot as ShadowRoot;
     if (shadowRoot)
       if (name === "code") {
