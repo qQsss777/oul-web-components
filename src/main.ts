@@ -1,5 +1,3 @@
-import "./web-components/index";
-
 const cb = document.getElementsByTagName("code-block")[0];
 
 setInterval(() => {
