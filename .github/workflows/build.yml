@@ -1,11 +1,10 @@
-name: Build web component
+name: Build web component and storybook
 
 on:
   push:
 
 jobs:
   build:
-    if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
