@@ -1,3 +1,4 @@
+import "../dist";
 const cb = document.getElementsByTagName("code-block")[0];
 
 setInterval(() => {

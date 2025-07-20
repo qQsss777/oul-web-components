@@ -5,10 +5,10 @@ const minimalPkg = {
   name: pkg.name,
   version: pkg.version,
   author: pkg.author,
-  main: pkg.main,
-  module: pkg.module,
+  main: "index.js",
+  module: "index.js",
   type: pkg.type,
-  files: ["."],
+  files: [".", "code-block"],
   license: pkg.license,
 };
 
